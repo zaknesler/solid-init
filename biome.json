@@ -1,6 +1,9 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
   "assist": { "actions": { "source": { "recommended": true, "organizeImports": "on" } } },
+  "files": {
+    "includes": ["./src/**", "./**/*.{ts,js,json,html,css}", "!node_modules", "!dist"]
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -8,8 +11,7 @@
       "style": {
         "noNonNullAssertion": "off"
       }
-    },
-    "includes": ["./src/**", "./**/*.{ts,js,json,html,css}", "!node_modules", "!dist"]
+    }
   },
   "formatter": {
     "enabled": true,
