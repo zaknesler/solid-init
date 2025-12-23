@@ -4,7 +4,7 @@
     "actions": { "source": { "recommended": true, "organizeImports": "on" } }
   },
   "files": {
-    "includes": ["./src/**", "./**/*.{ts,js,json,html,css}", "!node_modules", "!dist"]
+    "includes": ["./src/**", "./**/*.{ts,tsx,js,jsx,json,html,css}", "!node_modules", "!dist"]
   },
   "linter": {
     "enabled": true,
@@ -12,6 +12,9 @@
       "recommended": true,
       "style": {
         "noNonNullAssertion": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "warn"
       }
     }
   },
