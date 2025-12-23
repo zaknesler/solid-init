@@ -49,6 +49,7 @@
       "language_servers": [
         "biome",
         "vscode-html-language-server",
+        "tailwindcss-language-server",
         "emmet-language-server",
       ],
       "formatter": { "language_server": { "name": "biome" } },
