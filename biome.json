@@ -1,13 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
-  "assist": {
-    "actions": {
-      "source": {
-        "recommended": true,
-        "organizeImports": "on"
-      }
-    }
-  },
+  "assist": { "actions": { "source": { "recommended": true, "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
@@ -16,14 +9,14 @@
         "noNonNullAssertion": "off"
       }
     },
-    "includes": ["./src/**", "./json*", "./*.ts"]
+    "includes": ["./src/**", "./**/*.{ts,js,json,html,css}", "!node_modules", "!dist"]
   },
   "formatter": {
+    "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 120,
-    "includes": ["./src/**", "./json*", "./*.ts"]
+    "lineWidth": 120
   },
   "javascript": {
     "formatter": {
@@ -36,9 +29,7 @@
       "trailingCommas": "all"
     }
   },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    }
-  }
+  "json": { "formatter": { "enabled": true, "trailingCommas": "none" } },
+  "html": { "formatter": { "enabled": true } },
+  "css": { "formatter": { "enabled": true }, "parser": { "tailwindDirectives": true } }
 }
