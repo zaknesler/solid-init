@@ -1,12 +1,12 @@
 /* @refresh reload */
 
+import './index.css';
+
 import { MetaProvider, Title } from '@solidjs/meta';
 import { Route, Router } from '@solidjs/router';
 import { lazy } from 'solid-js';
 import { render } from 'solid-js/web';
 import { BaseLayout } from './layout/base';
-
-import './index.css';
 
 const root = document.getElementById('root');
 
