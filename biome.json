@@ -9,7 +9,7 @@
     }
   },
   "files": {
-    "includes": ["./src/**", "./types/**", "./*.{ts,tsx,js,jsx,json,html,css}"]
+    "includes": ["./src/**", "./types/**", "./*.{ts,js,json,html}"]
   },
   "linter": {
     "enabled": true,
